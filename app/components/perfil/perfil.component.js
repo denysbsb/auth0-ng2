@@ -13,6 +13,8 @@ var auth_service_1 = require('../../services/auth.service');
 var PerfilComponent = (function () {
     function PerfilComponent(auth) {
         this.auth = auth;
+        this.perfil = JSON.parse(localStorage.getItem('profile'));
+        console.log(this.perfil);
     }
     PerfilComponent = __decorate([
         core_1.Component({

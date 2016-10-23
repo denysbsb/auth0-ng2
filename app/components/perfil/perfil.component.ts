@@ -7,9 +7,10 @@ import {Auth} from '../../services/auth.service';
   templateUrl: 'perfil.component.html'
 })
 export class PerfilComponent { 
+	perfil:any;
 	constructor(private auth:Auth){
-         this.profile = JSON.parse(localStorage.getItem('profile'));
-        console.log(this.profile);
+         this.perfil = JSON.parse(localStorage.getItem('profile'));
+        console.log(this.perfil);
     }
-    
+
 }
