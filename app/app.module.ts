@@ -7,13 +7,16 @@ import { AppComponent }  from './app.component';
 import {HomeComponent} from './components/home/home.component';
 import {PerfilComponent} from './components/perfil/perfil.component';
 
+import {Auth} from './services/auth.service';
+
 @NgModule({
   imports: [ BrowserModule, routing ],
   declarations: [ AppComponent,HomeComponent,PerfilComponent ],
   bootstrap: [ AppComponent ],
   providers: [
     appRoutingProviders,
-    AUTH_PROVIDERS
+    AUTH_PROVIDERS,
+    Auth
   ]
 })
 export class AppModule { }
